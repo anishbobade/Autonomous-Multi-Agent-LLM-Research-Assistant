@@ -1,0 +1,377 @@
+id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+name: Autonomous Multi-Agent LLM Research Assistant
+project_id: 4cb0e06b-9ccf-4a82-bdb7-0431b0a8acb8
+global_imports: []
+python_global_imports: ''
+r_global_imports: ''
+requirements: []
+linux_packages: []
+environment_variables: []
+is_public: false
+organization_id: 37a4c82e-c17a-4e27-a0b2-0492b0bd53e4
+layers:
+- blocks:
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Creates 5 fact-check visualization charts with validation status,
+      confidence scores, hallucination/inconsistency flags, and metrics summary using
+      Zerve design system colors
+    height: 1000
+    id: 00b9422d-1eb4-4983-bb2c-c21e6ac428f5
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Fact-Check Visualization Dashboard
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 18000
+    y: 1400
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: 'Creates 6 visualizations analyzing research insights: trends, gaps,
+      severity, contributions, future directions, and topic frequency'
+    height: 1000
+    id: 05593f6e-553c-429a-9890-62c9a9fbe131
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Insight Visualization Dashboard
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 20000
+    y: 1400
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Extracts paper metadata and semantic relevance using knowledge base
+      search
+    height: 1000
+    id: 09dddccb-5fa3-4410-8a8f-8cc5e04d349d
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Agent 1 - Paper Reader
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 12000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Generates TF-IDF semantic embeddings for text chunks and builds knowledge
+      base with vector representations for similarity search
+    height: 1000
+    id: 383bdd72-c44c-4a9e-8a68-ceef5024d0fa
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Semantic Embeddings Generation
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 8000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Compiles comprehensive research report from all upstream agents with
+      executive summary, individual paper analyses, synthesis, and recommendations
+    height: 1000
+    id: 548b47bc-de7c-47d0-9dde-33d116151454
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Agent 5 - Report Writer & Controller
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 20000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: 'Extracts text from research papers and applies NLP processing: tokenization,
+      stop word removal, and lemmatization'
+    height: 1000
+    id: 5bfa6392-d133-4b43-a390-ab9b8f9eb016
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: NLP Pipeline - Tokenization & Cleaning
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 4000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Segments tokenized research papers into overlapping 100-token chunks
+      for embedding preparation
+    height: 1000
+    id: a9a78369-4f38-40f9-b114-3edd8e91228b
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Chunk Segmentation
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 6000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Generates comprehensive AI healthcare research report with abstract,
+      literature review, findings, 4 visualizations, and strategic recommendations
+      from multi-agent analysis pipeline output
+    height: 1000
+    id: b77f815a-9a9c-4f12-8ef6-a8243b7b6bd2
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Complete Research Report with Visualizations
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 22000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Validates paper summaries against original sources, verifying topics
+      and content accuracy with overlap metrics
+    height: 1000
+    id: bac4290b-0d15-4530-83ef-be3b4d484750
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Agent 3 - Fact Check
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 16000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Performs semantic similarity search on a TF-IDF embedded knowledge
+      base using cosine similarity to find and rank relevant research paper chunks
+    height: 1000
+    id: c7be864a-5a0c-4bb9-b5c4-6c7c537288dc
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Semantic Search System
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 10000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Extracts key topics and generates concise summaries from research
+      papers with relevance scoring and aggregate insights
+    height: 1000
+    id: c9527ca2-44c5-4c8f-b18b-1a359ae79bdd
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Agent 2 - Summarization
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 14000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Analyzes validated research summaries to identify trends, research
+      gaps, comparative patterns, and future research directions using chain-of-thought
+      reasoning
+    height: 1000
+    id: c9a27114-3a3e-46e7-9986-abfebcfeb310
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Agent 4 - Insight Generator
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 18000
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Sets up research parameters for AI in healthcare including topic,
+      keywords, and questions for downstream agents
+    height: 1000
+    id: d8f92691-744d-46d7-84dc-d4b9f8a4b697
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Research Configuration Input
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 0
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Cross-references paper claims against knowledge base using vector
+      similarity; flags hallucinations and inconsistencies with confidence scores
+    height: 1000
+    id: e0fe8b7d-6099-46f1-b284-eb676a282f57
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Enhanced Fact-Check with Inconsistency Detection
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 16000
+    y: 1400
+  - auto_size: false
+    canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Creates 3 sample research papers on AI in healthcare with titles,
+      abstracts, and keywords for NLP testing
+    height: 1000
+    id: f591f79e-62fb-4514-bf2f-e3d06d250ad5
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    name: Sample Research Papers
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 2000
+    y: 0
+  canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+  edges:
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: 019eaf80-4c79-48bd-8b09-49591a08f9e3
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: c9527ca2-44c5-4c8f-b18b-1a359ae79bdd
+    target: bac4290b-0d15-4530-83ef-be3b4d484750
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: 0291ab7d-c08a-41ef-92c3-e67cae2a348a
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: e0fe8b7d-6099-46f1-b284-eb676a282f57
+    target: 00b9422d-1eb4-4983-bb2c-c21e6ac428f5
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: 0ac59845-b58b-49f7-b1b3-f878eb348100
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: c9a27114-3a3e-46e7-9986-abfebcfeb310
+    target: 05593f6e-553c-429a-9890-62c9a9fbe131
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: 6bd8148e-4773-4d41-a850-2db054ce1caa
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: d8f92691-744d-46d7-84dc-d4b9f8a4b697
+    target: f591f79e-62fb-4514-bf2f-e3d06d250ad5
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: 7220a2b1-2a1f-4571-84cc-701e676618f1
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: 383bdd72-c44c-4a9e-8a68-ceef5024d0fa
+    target: c7be864a-5a0c-4bb9-b5c4-6c7c537288dc
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: 74c36f38-d005-4155-90e8-a32030cbba55
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: 09dddccb-5fa3-4410-8a8f-8cc5e04d349d
+    target: c9527ca2-44c5-4c8f-b18b-1a359ae79bdd
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: 7b3207c1-8007-449f-b28d-8db3e754f1f1
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: bac4290b-0d15-4530-83ef-be3b4d484750
+    target: c9a27114-3a3e-46e7-9986-abfebcfeb310
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: 9c19589f-465a-4bbe-b6d5-e0256a68ba0d
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: 5bfa6392-d133-4b43-a390-ab9b8f9eb016
+    target: a9a78369-4f38-40f9-b114-3edd8e91228b
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: b47e1da4-07f3-4dd3-bb5b-0caa142c0dd0
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: 548b47bc-de7c-47d0-9dde-33d116151454
+    target: b77f815a-9a9c-4f12-8ef6-a8243b7b6bd2
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: b84f17b2-faf9-47c2-8d55-a1ae57427502
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: a9a78369-4f38-40f9-b114-3edd8e91228b
+    target: 383bdd72-c44c-4a9e-8a68-ceef5024d0fa
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: bf76a92c-9c55-4c3c-abd8-237ea29cf13d
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: c9a27114-3a3e-46e7-9986-abfebcfeb310
+    target: 548b47bc-de7c-47d0-9dde-33d116151454
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: db825d81-0688-41b8-a356-581bae06952d
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: f591f79e-62fb-4514-bf2f-e3d06d250ad5
+    target: 5bfa6392-d133-4b43-a390-ab9b8f9eb016
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: e4ee57da-0219-4f9b-8e17-c5800044e367
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: c7be864a-5a0c-4bb9-b5c4-6c7c537288dc
+    target: 09dddccb-5fa3-4410-8a8f-8cc5e04d349d
+  - canvas_id: 9bc615ab-9add-4e6b-82a3-839bafee26a7
+    id: facdd90f-37c2-486f-a24c-1844a5e0df14
+    layer_id: eb429d8f-40e0-4769-9ca3-ae767060376a
+    source: c9527ca2-44c5-4c8f-b18b-1a359ae79bdd
+    target: e0fe8b7d-6099-46f1-b284-eb676a282f57
+  id: eb429d8f-40e0-4769-9ca3-ae767060376a
+  name: Development
+  type: 1
+assets: []
